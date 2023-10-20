@@ -183,36 +183,36 @@
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\HOADON.cs">
-      <DependentUpon>TOURDL.tt</DependentUpon>
+      <DependentUpon>TourDL2.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\KHACHHANG.cs">
-      <DependentUpon>TOURDL.tt</DependentUpon>
+      <DependentUpon>TourDL2.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\NHANVIEN.cs">
-      <DependentUpon>TOURDL.tt</DependentUpon>
+      <DependentUpon>TourDL2.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\SPTOUR.cs">
-      <DependentUpon>TOURDL.tt</DependentUpon>
+      <DependentUpon>TourDL2.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TOUR.cs">
-      <DependentUpon>TOURDL.tt</DependentUpon>
+      <DependentUpon>TourDL2.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\TOURDL.Context.cs">
+    <Compile Include="Models\TourDL2.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TOURDL.Context.tt</DependentUpon>
+      <DependentUpon>TourDL2.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\TOURDL.cs">
+    <Compile Include="Models\TourDL2.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TOURDL.tt</DependentUpon>
+      <DependentUpon>TourDL2.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\TOURDL.Designer.cs">
+    <Compile Include="Models\TourDL2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TOURDL.edmx</DependentUpon>
+      <DependentUpon>TourDL2.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -238,18 +238,21 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="CSS\AdminIndex.css" />
+    <Content Include="CSS\AdminLayout.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\TOURDL.Context.tt">
+    <Content Include="Images\logo3.jpg" />
+    <Content Include="Models\TourDL2.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>TOURDL.edmx</DependentUpon>
-      <LastGenOutput>TOURDL.Context.cs</LastGenOutput>
+      <DependentUpon>TourDL2.edmx</DependentUpon>
+      <LastGenOutput>TourDL2.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\TOURDL.tt">
+    <Content Include="Models\TourDL2.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>TOURDL.edmx</DependentUpon>
-      <LastGenOutput>TOURDL.cs</LastGenOutput>
+      <DependentUpon>TourDL2.edmx</DependentUpon>
+      <LastGenOutput>TourDL2.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -257,12 +260,12 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="Models\TOURDL.edmx">
+    <EntityDeploy Include="Models\TourDL2.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>TOURDL.Designer.cs</LastGenOutput>
+      <LastGenOutput>TourDL2.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\TOURDL.edmx.diagram">
-      <DependentUpon>TOURDL.edmx</DependentUpon>
+    <Content Include="Models\TourDL2.edmx.diagram">
+      <DependentUpon>TourDL2.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -334,6 +337,7 @@
     <Content Include="Views\NHANVIENs\Details.cshtml" />
     <Content Include="Views\NHANVIENs\Edit.cshtml" />
     <Content Include="Views\NHANVIENs\Index.cshtml" />
+    <Content Include="Views\Shared\AdminLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

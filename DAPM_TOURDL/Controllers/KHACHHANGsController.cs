@@ -12,7 +12,7 @@ namespace DAPM_TOURDL.Controllers
 {
     public class KHACHHANGsController : Controller
     {
-        private TourDLEntities db = new TourDLEntities();
+        private TourDLEntities1 db = new TourDLEntities1();
 
         // GET: KHACHHANGs
         public ActionResult Index()
@@ -42,12 +42,13 @@ namespace DAPM_TOURDL.Controllers
         }
 
         // POST: KHACHHANGs/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
+        // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "ID_KH,HoTen_KH,GioiTinh_KH,NgaySinh_KH,MatKhau,CCCD,SDT_KH,Mail_KH,Diem")] KHACHHANG kHACHHANG)
         {
+            kHACHHANG.Diem = 0;
             if (ModelState.IsValid)
             {
                 db.KHACHHANGs.Add(kHACHHANG);
@@ -74,7 +75,7 @@ namespace DAPM_TOURDL.Controllers
         }
 
         // POST: KHACHHANGs/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
+        // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]

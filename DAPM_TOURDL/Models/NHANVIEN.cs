@@ -23,7 +23,7 @@ namespace DAPM_TOURDL.Models
         public int ID_NV { get; set; }
         public string HoTen_NV { get; set; }
         public string GioiTinh_NV { get; set; }
-        public System.DateTime NgaySinh_NV { get; set; }
+        public Nullable<System.DateTime> NgaySinh_NV { get; set; }
         public string MatKhau { get; set; }
         public string Mail_NV { get; set; }
         public string ChucVu { get; set; }

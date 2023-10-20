@@ -1,83 +1,99 @@
 ﻿@model IEnumerable<DAPM_TOURDL.Models.KHACHHANG>
 
 @{
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+
 }
-
 <!DOCTYPE html>
-
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
+    <link rel="stylesheet" href="~/CSS/AdminIndex.css" />
 </head>
 <body>
-    <p>
-        @Html.ActionLink("Create New", "Create")
-    </p>
-    <table class="table">
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.HoTen_KH)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.GioiTinh_KH)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.NgaySinh_KH)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MatKhau)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CCCD)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SDT_KH)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Mail_KH)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Diem)
-            </th>
-            <th></th>
-        </tr>
-    
-    @foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.HoTen_KH)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.GioiTinh_KH)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NgaySinh_KH)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MatKhau)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CCCD)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SDT_KH)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Mail_KH)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Diem)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.ID_KH }) |
-                @Html.ActionLink("Details", "Details", new { id=item.ID_KH }) |
-                @Html.ActionLink("Delete", "Delete", new { id=item.ID_KH })
-            </td>
-        </tr>
-    }
-    
-    </table>
+    <div class="box">
+        <h2 style="">QUẢN LÝ KHÁCH HÀNG</h2>
+        <form asp-action="Index" method="get">
+            <input type="text" name="SearchString" placeholder="Tìm kiếm qua gmail hoặc tên" class="searchBox form-control" />
+        </form>
+        <button class="btnCreate btn btn-dark ">@Html.ActionLink("Thêm mới khách hàng", "Create")</button>
+    </div>
+    <div class="box mt-3">
+        <h3 class="text-center">Danh sách khách hàng</h3>
+        <table class="listTable table table-bordered table-sm table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th>
+                        ID
+                    </th>
+                    <th>
+                        Họ và tên
+                    </th>
+                    <th>
+                        Giới tính
+                    </th>
+                    <th>
+                        Ngày sinh
+                    </th>
+                    <th>
+                        Mật khẩu
+                    </th>
+                    <th>
+                        CCCD
+                    </th>
+                    <th>
+                        SĐT
+                    </th>
+                    <th>
+                        Email
+                    </th>
+                    <th>
+                        Điểm
+                    </th>
+                    <th>
+                        Hành động
+                    </th>
+                </tr>
+            </thead>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ID_KH)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.HoTen_KH)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.GioiTinh_KH)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NgaySinh_KH)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MatKhau)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CCCD)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SDT_KH)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Mail_KH)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Diem)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.ID_KH }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.ID_KH }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.ID_KH })
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
 </body>
 </html>

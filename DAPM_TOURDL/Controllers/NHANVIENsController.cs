@@ -12,7 +12,7 @@ namespace DAPM_TOURDL.Controllers
 {
     public class NHANVIENsController : Controller
     {
-        private TourDLEntities db = new TourDLEntities();
+        private TourDLEntities1 db = new TourDLEntities1();
 
         // GET: NHANVIENs
         public ActionResult Index()

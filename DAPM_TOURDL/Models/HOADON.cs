@@ -15,13 +15,13 @@ namespace DAPM_TOURDL.Models
     public partial class HOADON
     {
         public int ID_HoaDon { get; set; }
-        public int SLTreEm { get; set; }
-        public int TongTienTour { get; set; }
-        public System.DateTime NgayDat { get; set; }
+        public Nullable<int> SLTreEm { get; set; }
+        public Nullable<int> TongTienTour { get; set; }
+        public Nullable<System.DateTime> NgayDat { get; set; }
         public string TinhTrang { get; set; }
-        public int SLNguoiLon { get; set; }
-        public int TienKhuyenMai { get; set; }
-        public int TienPhaiTra { get; set; }
+        public Nullable<int> SLNguoiLon { get; set; }
+        public Nullable<int> TienKhuyenMai { get; set; }
+        public Nullable<int> TienPhaiTra { get; set; }
         public string ID_SPTour { get; set; }
         public Nullable<int> ID_KH { get; set; }
     

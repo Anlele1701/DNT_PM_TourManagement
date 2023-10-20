@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d9f1187bdfe641edaa59731fb131f03f" Name="Diagram1">
+        <EntityTypeShape EntityType="TourDLModel1.HOADON" Width="1.5" PointX="5.25" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourDLModel1.KHACHHANG" Width="1.5" PointX="3" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourDLModel1.NHANVIEN" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourDLModel1.SPTOUR" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourDLModel1.TOUR" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <AssociationConnector Association="TourDLModel1.FK__HOADON__ID_KH__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="TourDLModel1.FK__HOADON__ID_SPTou__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="TourDLModel1.FK__SPTOUR__ID_NV__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="TourDLModel1.FK__SPTOUR__ID_TOUR__5CD6CB2B" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

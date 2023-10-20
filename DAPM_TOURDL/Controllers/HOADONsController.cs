@@ -12,7 +12,7 @@ namespace DAPM_TOURDL.Controllers
 {
     public class HOADONsController : Controller
     {
-        private TourDLEntities db = new TourDLEntities();
+        private TourDLEntities1 db = new TourDLEntities1();
 
         // GET: HOADONs
         public ActionResult Index()
@@ -45,7 +45,7 @@ namespace DAPM_TOURDL.Controllers
         }
 
         // POST: HOADONs/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
+        // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -81,7 +81,7 @@ namespace DAPM_TOURDL.Controllers
         }
 
         // POST: HOADONs/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
+        // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
