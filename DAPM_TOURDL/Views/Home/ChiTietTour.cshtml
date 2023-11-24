@@ -35,10 +35,11 @@
                     <p>Giá người lớn: @string.Format("{0:#,#} VND", item.GiaNguoiLon)</p>
                     <p>Giá trẻ em: @string.Format("{0:#,#} VND", item.GiaTreEm)</p>
                     <p>Số ghế còn trống: @Html.DisplayFor(modelItem => item.SoNguoi)</p>
+                </div>
             </div>
-        </div>
-        <div class="text-center">
-            <a class="btn btn-primary btn-lg fw-bold"    href="@Url.Action("DatTour","Home",new {id=item.ID_SPTour})">Đặt tour</a>
+            <div class="d-flex justify-content-center">
+                <a class="btn" href="@Url.Action("DatTour","Home",new {id=item.ID_SPTour})">Đặt tour</a>
+            </div>
         </div>
     </div>
 }
